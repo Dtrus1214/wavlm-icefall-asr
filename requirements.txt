@@ -1,0 +1,10 @@
+torch>=2.2
+torchaudio>=2.2
+transformers>=4.45
+accelerate>=0.34
+soundfile>=0.12
+sentencepiece>=0.2
+numpy>=1.26
+pyyaml>=6.0
+lhotse>=1.25
+jiwer>=3.0

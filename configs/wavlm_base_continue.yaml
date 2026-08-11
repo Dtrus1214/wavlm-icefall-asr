@@ -1,0 +1,18 @@
+# Documentation/config shim for official Microsoft WavLM continued pretraining.
+# train_official.py maps these values to fairseq/Hydra overrides.
+task_data: data/wavlm_ssl
+label_dir: data/hubert_kmeans_labels
+labels: km
+sample_rate: 16000
+max_sample_size: 250000
+min_sample_size: 32000
+model: wavlm_base
+mask_prob: 0.65
+mask_length: 10
+optimizer: adam
+learning_rate: 0.0001
+max_update: 100000
+warmup_updates: 8000
+update_freq: 8
+max_tokens: 1400000
+save_interval_updates: 5000
